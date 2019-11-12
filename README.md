@@ -34,7 +34,6 @@
 6.  Run the server on your terminal `node server.js`
 7.  Navigate to `localhost:3306` on your browser
 
-## Heroku Live Demo
+## Link to Heroku Live Demo
 
 [Eat-Da-Burger](https://burger-app-bootcamp.herokuapp.com)
-# burger
