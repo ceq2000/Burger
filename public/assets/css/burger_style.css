@@ -1,0 +1,13 @@
+body {
+background-color: rgb(233, 147, 8);
+margin-top: 24px;
+}
+
+img {
+width: 224px;
+height: auto;
+}
+
+.input-group {
+margin: 24px;
+}

@@ -1,0 +1,71 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <img src="/assets/img/burger.png" alt="burger" class="img-responsive center-block">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center text-danger">Eat-Da-Burger</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <ul>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <form>
+                    <div class="input-group">
+                        <li class="form-control">
+                            {{id}}.
+                            {{burger_name}}
+                        </li>
+                        <span class="input-group-btn">
+                            <button class="devour btn btn-secondary" data-id="{{id}}">Devour It!</button>
+                        </span>
+                    </div>
+                </form>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5">
+            <ul class="list-group">
+                {{#each burgers}}
+                {{#if devoured}}
+                <form>
+                    <div class="input-group">
+                        <li class="form-control" style="background-color:#D5DBDB;">
+                            {{id}}.
+                            {{burger_name}}
+                        </li>
+                        <span class="input-group-btn">
+                            <button class="delete btn btn-secondary" data-id="{{id}}">Toss It!</button>
+                        </span>
+                    </div>
+                </form>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <form id="add-burger">
+                <div class="form-group">
+                    <textarea id="burger" name="burger" rows="5" cols="40"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit" id="submit-btn">Submit</button>
+            </form>
+            <p class="h4"> Create the burger you want to eat by entering a description then click the submit button.</p>
+        </div>
+    </div>
+
+</div>
