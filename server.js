@@ -9,7 +9,7 @@ var burgerController = require("./controllers/burgers_controller.js");
 // Import burger.js model to access database functions
 var burger = require("./models/burger.js");
 
-var PORT = process.env.PORT || 3306;
+var PORT = process.env.PORT || 5000;
 
 var app = express();
 
@@ -38,4 +38,6 @@ app.get("/", function (req, res) {
 
 app.use("/api/burgers", burgerController);
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log('Listening')
+});
