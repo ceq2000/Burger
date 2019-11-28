@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "JAWSDB_URL=mysql://vnx4yn7e4ew4w7vn:y264rjh1qzhkvlht@lmag6s0zwmcswp5w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ondpkpwlvbafvv2i",
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
