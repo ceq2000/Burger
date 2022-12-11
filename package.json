@@ -19,7 +19,7 @@
   "homepage": "https://github.com/ceq2000/burger#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "method-override": "^2.3.10",
     "mysql": "^2.17.1"
